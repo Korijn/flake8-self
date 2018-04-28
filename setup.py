@@ -12,7 +12,7 @@ setup(
     author='Korijn van Golen',
     author_email='korijn@gmail.com',
     url='http://github.com/korijn/flake8-self',
-    license='LGPL',
+    license='Freely Distributable',
     zip_safe=False,
     entry_points={
         'flake8.extension': [
@@ -24,7 +24,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: LGPL',
+        'License :: Freely Distributable',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
