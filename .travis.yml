@@ -1,0 +1,13 @@
+sudo: required
+language: python
+python:
+  - "3.6"
+
+install:
+  - pip install pipenv --upgrade
+  - pipenv install --dev
+
+script:
+  - pipenv run flake8 flake8_self.py
+  - pipenv run pytest test_self.py
+  - pipenv run python setup.py bdist_wheel

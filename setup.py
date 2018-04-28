@@ -16,7 +16,7 @@ setup(
     zip_safe=False,
     entry_points={
         'flake8.extension': [
-            'flake8_self = flake8_self:SelfLinter',
+            'SF01 = flake8_self:SelfLinter',
         ],
     },
     install_requires=["flake8"],
