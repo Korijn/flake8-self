@@ -1,6 +1,6 @@
 import ast
 
-__version__ = '0.2.0'
+__version__ = '0.2.2'
 
 ERRORS_SF01 = 'SF01 Private member access'
 
