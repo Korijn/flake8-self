@@ -1,4 +1,4 @@
-[![PyPI](https://badge.fury.io/py/flake8-self.svg)](https://badge.fury.io/py/flake8-self) [![Anaconda](https://travis-ci.org/Korijn/flake8-self.svg?branch=master)](https://travis-ci.org/Korijn/flake8-self/)
+[![PyPI](https://badge.fury.io/py/flake8-self.svg)](https://badge.fury.io/py/flake8-self) [![Anaconda](https://anaconda.org/conda-forge/flake8-self/badges/version.svg)](https://anaconda.org/conda-forge/flake8-self/) [![Travis](https://travis-ci.org/Korijn/flake8-self.svg?branch=master)](https://travis-ci.org/Korijn/flake8-self/)
 
 # flake8-self
 
