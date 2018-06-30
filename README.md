@@ -8,8 +8,8 @@ Private member access linting plugin for flake8.
 
 ```
 > pipenv run flake8 example.py
-example.py:10:1: SF01 Private member access
-example.py:11:1: SF01 Private member access
+example.py:10:1: SLF001 Private member access
+example.py:11:1: SLF001 Private member access
 ```
 
 example.py:
@@ -23,7 +23,7 @@ class Foo(object):
 
 foo = Foo()
 print(foo.public_thing)
-print(foo._private_thing)  # SF01 Private member access
-print(foo.__really_private_thing)  # SF01 Private member access
+print(foo._private_thing)  # SLF001 Private member access
+print(foo.__really_private_thing)  # SLF001 Private member access
 print(foo.__dict__)
 ```
