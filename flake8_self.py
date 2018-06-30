@@ -1,8 +1,8 @@
 import ast
 
-__version__ = '0.2.2'
+__version__ = '0.3.0'
 
-ERRORS_SF01 = 'SF01 Private member access'
+ERRORS_SLF001 = 'SLF001 Private member access'
 
 
 def is_private_attribute(attr):
@@ -40,4 +40,4 @@ class SelfLinter(object):
         visitor = SelfVisitor()
         visitor.visit(self.tree)
         for access_violation in visitor.access_violations:
-            yield access_violation.lineno, 0, ERRORS_SF01, type(self)
+            yield access_violation.lineno, 0, ERRORS_SLF001, type(self)
