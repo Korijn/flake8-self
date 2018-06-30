@@ -19,6 +19,6 @@ print(foo.__dict__)"""
     violations = list(flake8_self.SelfLinter(tree).run())
     assert len(violations) == 2
     assert violations[0][0] == 9
-    assert violations[0][2] == flake8_self.ERRORS_SF01
+    assert violations[0][2] == flake8_self.ERRORS_SLF001
     assert violations[1][0] == 10
-    assert violations[1][2] == flake8_self.ERRORS_SF01
+    assert violations[1][2] == flake8_self.ERRORS_SLF001
