@@ -7,6 +7,6 @@ class Foo(object):
 
 foo = Foo()
 print(foo.public_thing)
-print(foo._private_thing)  # SF01 Private member access
-print(foo.__really_private_thing)  # SF01 Private member access
+print(foo._private_thing)  # SLF001 Private member access
+print(foo.__really_private_thing)  # SLF001 Private member access
 print(foo.__dict__)
