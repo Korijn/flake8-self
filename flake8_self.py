@@ -3,6 +3,7 @@ import ast
 __version__ = '0.3.0'
 
 ERRORS_SLF001 = 'SLF001 Private member access'
+VALID_IDS = {'self', 'cls', 'mcs'}
 
 
 def is_private_attribute(attr):
@@ -15,9 +16,9 @@ class SelfVisitor(ast.NodeVisitor):
 
     def visit_Attribute(self, node):
         if is_private_attribute(node.attr):
-            if hasattr(node.value, 'id') and node.value.id != 'self':
+            if hasattr(node.value, 'id') and node.value.id not in VALID_IDS:
                 self.access_violations.append(node)
-            elif hasattr(node.value, 'attr') and node.value.attr != 'self':
+            elif hasattr(node.value, 'attr') and node.value.attr not in VALID_IDS:
                 self.access_violations.append(node)
 
 
