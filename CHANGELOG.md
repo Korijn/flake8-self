@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- #2 Updated violation code from SF01 to SLF001, thanks to @peterjc
-- #4 `cls` and `mcs` are now also allowed alongside `self`
+- PR #2 Updated violation code from SF01 to SLF001, thanks to @peterjc for reporting
+- PR #4 `cls` and `mcs` are now also allowed alongside `self`, thanks to @anxodio for reporting and @nijel for fixing
 
 ## [0.2.2] - 2018-04-28
 ### Added
