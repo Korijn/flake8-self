@@ -7,7 +7,7 @@ setup(
     name='flake8-self',
     py_modules=['flake8_self'],
     version=__version__,
-    description=open("README.md").readlines()[4],
+    description=open("README.md").readlines()[4].strip().replace("\n", " "),
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',
     keywords='private access self linting flake8',
